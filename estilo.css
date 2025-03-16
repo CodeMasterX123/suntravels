@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+}
+
+/* Container de vídeo */
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Cards de Pacotes */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Formulário de busca */
+#busca {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#busca input,
+#busca button {
+    margin: 5px 0;
+}
+
+/* Destinos */
+#destinos {
+    margin-top: 30px;
+}
+
+#destinos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#destinos .col-md-3 {
+    margin-bottom: 15px;
+}
+
+#destinos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#destinos h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    #destinos .col-md-3 {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    #busca input,
+    #busca button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 12px;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    #destinos h2 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #video-container video {
+        object-position: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    #busca input,
+    #busca button {
+        font-size: 0.9rem;
+    }
+
+    #destinos h3 {
+        font-size: 1rem;
+    }
+}
